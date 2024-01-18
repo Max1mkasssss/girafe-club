@@ -1,2 +1,135 @@
-;
+/* style.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1680px;
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid red;
+}
+
+.non-padding {
+    padding: 0;
+}
+
+.non-margin {
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.triangle::before{ 
+    background-image: url(/img/triangle.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+/* Header , nav-bar */
+header {
+    background: var(--Background-Color-Orange, rgba(222, 116, 43, 0.90));
+    border-bottom: var(--Background-Color-White, #FCFCFC) 2px solid;
+    flex-shrink: 0;
+}
+.nav-bar{ 
+    justify-content: space-around;
+}
+.contacts-list {
+    gap: 13px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contacts-list-item {
+    color: var(--Font-Color-Black, #000);
+    text-align: center;
+    font-family: Bookman Old Style;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding: 14px 10px;
+    align-items: flex-start;
+}
+.image-list{ 
+    gap: 24px;
+    justify-self: baseline;
+    align-items: center;
+}
+.image-list-item {
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+/* Main  */
+.main{ 
+    background: var(--Background-Color-Orange, rgba(222, 116, 43, 0.90));
+}
+.wrapper{ 
+    width: 875px;
+    margin-top: 165px;
+    width: 100vh;
+}
+.main-text{ 
+    flex-direction: column;
+    width: 875px;
+}
+.main-text h1{ 
+    color: var(--Font-Color-Black, #000);
+    font-family: "Bookman Old Style";
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.main-text h2{ 
+    color: var(--Font-Color-Black, #000);
+    font-family: "Bookman Old Style";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 130%; /* 65px */
+}
+.main-text input{ 
+    width: 25vh;
+    align-items: center;
+    display: inline-flex;
+    padding: 20px 42px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 10px;
+    border: none;
+    background: var(--Font-Color-White, #FCFCFC);
+    color: var(--Font-Color-Black, #000);
+    font-family: "Bookman Old Style";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.image{ 
+    margin-left: 275px;
+}
+.image img::before{ 
+    background-image: url(img/triangle.svg);
+    background-repeat: no-repeat;
 }
